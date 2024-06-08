@@ -3,7 +3,7 @@ import axios from "axios";
 
 const AuthContext = createContext();
 
-const API_BASE_URL = "https://666481a8932baf9032ab49a5.mockapi.io/users"; // Replace with your actual API base URL
+const API_BASE_URL = "https://666481a8932baf9032ab49a5.mockapi.io/users"; 
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
