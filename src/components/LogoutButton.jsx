@@ -8,11 +8,15 @@ const LogoutButton = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    logout(); // Clear user data
-    navigate("/login"); // Navigate to login page
+    logout();
+    navigate("/login"); 
   };
 
-  return <button onClick={handleLogout}>Logout</button>;
+  return (
+    <button className="logout-btn" onClick={handleLogout}>
+      Logout
+    </button>
+  );
 };
 
 export default LogoutButton;

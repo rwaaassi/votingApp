@@ -15,10 +15,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div className="login-page">
       <h2>Login</h2>
       {loading && <p>Loading...</p>}
-      <form onSubmit={handleSubmit}>
+      <form className="login-form" onSubmit={handleSubmit}>
         <div>
           <label>Email:</label>
           <input
@@ -37,7 +37,7 @@ const LoginPage = () => {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button className="login-btn" type="submit">Login</button>
       </form>
     </div>
   );
